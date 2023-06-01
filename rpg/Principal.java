@@ -31,7 +31,7 @@ public class Principal extends Sistema {
     
                     heroi.setVida(heroi.getVida() - inimigo.getDanoAtaque());
     
-                    JOptionPane.showMessageDialog(null, "voce perdeu " + heroi.getDanoAtaque() + heart + "de vida");
+                    JOptionPane.showMessageDialog(null, "Voce Perdeu " + heroi.getDanoAtaque() + heart + "De Vida");
     
                     heroi.status(heroi.getVida(), heroi.getName());
                         break;

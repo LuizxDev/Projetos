@@ -22,6 +22,13 @@ public class Heroi extends Sistema  {
           
     }
 
+    public void status(int vida, String nome){
+
+        JOptionPane.showMessageDialog(null,
+        "\nSeus Status" + 
+        "\nNome: " + nome + "\nVida: " + vida);
+        }
+
 
     
 

@@ -1,5 +1,4 @@
 package rpg;
-import javax.swing.JOptionPane;
 public class Sistema {
 
     public static final String heart = "\u2764"; //EMOJI DE CORAÇAO
@@ -7,13 +6,6 @@ public class Sistema {
     private String name;
     private int vida = 100;
     private int danoAtaque = 10;
-
-    public void status(int vida, String nome){
-
-        JOptionPane.showMessageDialog(null,
-        "\nStatus" + 
-        "\nNome: " + nome + "\n" + heart + "Vida: " + vida);
-        }
 
         String[] efeitoDano = {"Um tremendo golpe do inimigo acerta seu personagem em \ncheio, causando uma dor lancinante, mas sua determinação se mantém inabalável.",
 

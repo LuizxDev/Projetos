@@ -1,4 +1,5 @@
 package rpg;
+import javax.swing.JOptionPane;
 public class Enemy extends Sistema {
 
 
@@ -8,7 +9,13 @@ public class Enemy extends Sistema {
         
     }
 
-    
+    public void status(int vida, String nome){
+
+        JOptionPane.showMessageDialog(null,
+        "\nStatus Do Inimigo" + 
+        "\nNome: " + nome + "\nVida: " + vida);
+        }
+
     public boolean estaVivo() {
         return this.getVida() > 0;
     }
