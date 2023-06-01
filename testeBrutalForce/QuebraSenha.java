@@ -11,7 +11,6 @@ public class QuebraSenha {
     String combinacoes = "";
     String letras = "abcdefghijklmnopqrstuvwxyzrABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%&*-_";
     
-
     public void quebra (){
 
         while (!combinacoes.equals(password)) {
