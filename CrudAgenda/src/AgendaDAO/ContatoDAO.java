@@ -10,21 +10,21 @@ import model.Contato;
 public class ContatoDAO {
     /*
      * CRUD:
-     * c: CREATE
-     * r: READ
-     * u: UPDATE
-     * d: DELETE
+     * c: CREATE - OK - INSERT
+     * r: READ - SELECT
+     * u: UPDATE - UPDATE
+     * d: DELETE - DELETE 
      */
 
     public void save(Contato contato) {
-        String sql = "insert into contatos(nome, idade, dataCadastro) value (?, ?, ?)";
+        String sql = "insert into contatos(nome, idade, dataCadastro) values (?, ?, ?)";
 
         Connection conn = null;
         PreparedStatement pstm = null;
 
         try {
             // criar uma conexao com banco de dados
-            conn = ConexaoFactory.creatConnectionToMysQl();
+            conn = ConexaoFactory.criarConexaoMySQL();
             // criamos uma pstm para executar uma query
             pstm = conn.prepareStatement(sql);
 
@@ -51,4 +51,7 @@ public class ContatoDAO {
             }
         }
     }
+
+
+    
 }

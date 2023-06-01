@@ -11,7 +11,7 @@ public class principal {
 
         Contato contato = new Contato();
 
-        contato.setNome("Luiz");
+        contato.setNome("ola");
         contato.setIdade(55);
         contato.setDataCadastro(new Date());
 
