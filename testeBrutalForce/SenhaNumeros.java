@@ -1,6 +1,6 @@
 package testeBrutalForce;
 import java.util.Random;
-public class App {
+public class SenhaNumeros {
     Random random = new Random();
 
     private int pasword = 53;
