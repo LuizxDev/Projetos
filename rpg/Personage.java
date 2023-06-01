@@ -11,9 +11,8 @@ public class Personage {
     public void status(int vida, String nome){
 
         JOptionPane.showMessageDialog(null,
-        "\n   Status   " + 
-        "\nNome: " + nome + 
-        heart + "\nVida: " + vida);
+        "\nStatus" + 
+        "\nNome: " + nome + "\n" + heart + "Vida: " + vida);
         }
 
     public String getName() {

@@ -27,7 +27,7 @@ public class Principal extends Personage {
         while (heroi.estaVivo() && inimigo.estaVivo()){
 
             
-            String opcao = JOptionPane.showInputDialog("\n|Escolha uma ação| \n|1| Atacar \n  |2| Curar" +
+            String opcao = JOptionPane.showInputDialog("\n|Escolha uma ação| \n|1| Atacar \n|2| Curar" +
             "\n|3| Sair do Jogo");
 
             int indiceDano = aleatorio.nextInt(efeitoDano.length);
