@@ -21,28 +21,30 @@ public class Principal extends Sistema {
             int indiceAtaque = aleatorio.nextInt(sistema.efeitoAtaque.length);
 
     
-                switch (opcao) { 
-                    case 1:
-    
+            switch (opcao) { 
+                case 1:
                     inimigo.setVida(inimigo.getVida() - heroi.getDanoAtaque());
                     JOptionPane.showMessageDialog(null, sistema.efeitoAtaque[indiceAtaque]);
+
                     inimigo.status(inimigo.getVida(), inimigo.getName()); 
+                        
                     JOptionPane.showMessageDialog(null, sistema.efeitoDano[indiceDano]);
-    
+        
                     heroi.setVida(heroi.getVida() - inimigo.getDanoAtaque());
-    
+        
                     JOptionPane.showMessageDialog(null, "Voce Perdeu " + heroi.getDanoAtaque() + heart + "De Vida");
-    
+        
                     heroi.status(heroi.getVida(), heroi.getName());
-                        break;
+                         break;
                     case 2:
-                    heroi.usarPorçao();
-                    JOptionPane.showMessageDialog(null, "Após tomar a poção com coragem, seu personagem sente um poder revitalizante \npercorrer suas veias, renovando sua força e determinação.");
-                    heroi.status(heroi.getVida(), heroi.getName());
-                        break;
+                        heroi.usarPorçao();
+                        JOptionPane.showMessageDialog(null, "Após tomar a poção com coragem, seu personagem sente um poder revitalizante \npercorrer suas veias, renovando sua força e determinação.");
+                        
+                        heroi.status(heroi.getVida(), heroi.getName());
+                            break;
                     case 3:
-                    JOptionPane.showMessageDialog(null,"Aperte em OK para sair do Jogo");
-                        break;
+                        JOptionPane.showMessageDialog(null,"Aperte em OK para sair do Jogo");
+                            break;
                     default:
                         break;
                 }
