@@ -19,5 +19,10 @@ public class principal {
 
         contatoDAO.save(contato);
 
+        for(Contato c: contatoDAO.getContatos()){
+            System.out.println("Contato: " + c.getNome());
+            System.out.println("Contato: " + c.getIdade());
+        }
+
     }
 }

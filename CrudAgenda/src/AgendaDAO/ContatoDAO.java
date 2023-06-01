@@ -2,6 +2,9 @@ package AgendaDAO;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.ArrayList;
+import java.util.List;
 import java.sql.Date;
 
 import factory.ConexaoFactory;
@@ -53,5 +56,56 @@ public class ContatoDAO {
     }
 
 
-    
+    public List<Contato> getContatos(){
+        String sql = "SELECT * FROM contatos";
+
+        List<Contato> contatos = new ArrayList<Contato>();
+
+        Connection conn = null;
+        PreparedStatement pstm = null;
+        
+        //classe que recupera os dados do banco
+        ResultSet rset = null;
+
+        try {
+            conn = ConexaoFactory.criarConexaoMySQL();
+            pstm = conn.prepareStatement(sql);
+
+            rset = pstm.executeQuery();
+
+            while (rset.next()){
+                Contato contato = new Contato();
+
+                contato.setId(rset.getInt("id"));
+                contato.setNome(rset.getString("nome"));
+                contato.setIdade(rset.getInt("idade"));
+                contato.setDataCadastro(rset.getDate("dataCadastro"));
+
+                contatos.add(contato);
+
+
+            }
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }finally{
+            try{
+            if(rset != null){
+                rset.close();
+            }
+
+            if(pstm != null){
+                pstm.close();
+            }
+            if(conn != null){
+                conn.close();
+                }
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+        }
+        return contatos;
+
+    }
 }
