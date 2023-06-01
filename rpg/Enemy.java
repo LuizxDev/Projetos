@@ -1,5 +1,5 @@
 package rpg;
-public class Enemy extends Personage {
+public class Enemy extends Sistema {
 
 
     public Enemy(){

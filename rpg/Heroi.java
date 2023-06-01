@@ -1,6 +1,6 @@
 package rpg;
 import javax.swing.JOptionPane;
-public class Heroi extends Personage  {
+public class Heroi extends Sistema  {
 
     private final int porcao = 10;
     
