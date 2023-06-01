@@ -6,9 +6,7 @@ public class Principal extends Personage {
     public static void main(String[] args) {
 
         Random aleatorio = new Random();
-
-        
-
+       
         Heroi heroi = new Heroi();
         Enemy inimigo = new Enemy();
 
@@ -67,11 +65,7 @@ public class Principal extends Personage {
 
         }
 
-
-
-
     }      
 
-    
 
     }
