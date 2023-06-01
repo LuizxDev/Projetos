@@ -1,3 +1,4 @@
+package testeBrutalForce;
 import java.util.Random;
 public class App {
     Random random = new Random();

@@ -1,3 +1,4 @@
+package testeBrutalForce;
 import javax.swing.JOptionPane;
 import java.util.Random;
 public class QuebraSenha {
