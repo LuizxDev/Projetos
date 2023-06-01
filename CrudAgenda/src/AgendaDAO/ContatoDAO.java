@@ -9,8 +9,8 @@ import model.Contato;
 
 public class ContatoDAO {
     /*
-     * CRUD
-     * c: CREATE
+     * CRUD:
+     * c: CREATE ok
      * r: READ
      * u: UPDATE
      * d: DELETE
