@@ -19,25 +19,24 @@ public class Principal extends Sistema {
             "\n|3| Sair do Jogo");
 
             int indiceDano = aleatorio.nextInt(sistema.efeitoDano.length);
-        int indiceAtaque = aleatorio.nextInt(sistema.efeitoAtaque.length);
+            int indiceAtaque = aleatorio.nextInt(sistema.efeitoAtaque.length);
 
-            if(opcao.equals("1")){
-
+            switch (opcao) { 
+                case "1":
                 inimigo.setVida(inimigo.getVida() - heroi.getDanoAtaque());
                 JOptionPane.showMessageDialog(null, sistema.efeitoAtaque[indiceAtaque]);
-                inimigo.status(inimigo.getVida(), inimigo.getName());
-                
-
-            }else if (opcao.equals("2")){
+                inimigo.status(inimigo.getVida(), inimigo.getName()); 
+                    break;
+                case "2":
                 heroi.usarPorçao();
                 JOptionPane.showMessageDialog(null, "Após tomar a poção com coragem, seu personagem sente um poder revitalizante \npercorrer suas veias, renovando sua força e determinação.");
                 heroi.status(heroi.getVida(), heroi.getName());
-
-            }else if(opcao.equals("3")){
+                    break;
+                case "3":
                 JOptionPane.showMessageDialog(null,"Aperte em OK para sair do Jogo");
-                break;
-            }else{
-                JOptionPane.showMessageDialog(null,"Acao invalida");
+                    break;
+                default:
+                    break;
             }
 
             JOptionPane.showMessageDialog(null, sistema.efeitoDano[indiceDano]);
