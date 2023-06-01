@@ -1,6 +1,6 @@
 package testeBrutalForce;
 import java.util.Random;
-public class Sistema {
+public class Principal {
 
     Random random = new Random();
 
