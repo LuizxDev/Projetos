@@ -1,6 +1,11 @@
 package rpg;
-import javax.swing.JOptionPane;
 import java.util.Random;
+
+import javax.swing.JOptionPane;
+
+import rpg.model.Enemy;
+import rpg.model.Heroi;
+
 public class Principal extends Sistema {
 
     public static void main(String[] args) {

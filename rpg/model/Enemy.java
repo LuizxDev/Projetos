@@ -1,5 +1,8 @@
-package rpg;
+package rpg.model;
 import javax.swing.JOptionPane;
+
+import controller.Sistema;
+
 public class Enemy extends Sistema {
 
 
