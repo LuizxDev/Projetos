@@ -3,6 +3,7 @@ import java.util.Random;
 
 import javax.swing.JOptionPane;
 
+import rpg.controller.Sistema;
 import rpg.model.Enemy;
 import rpg.model.Heroi;
 

@@ -2,7 +2,7 @@ package rpg.model;
 
 import javax.swing.JOptionPane;
 
-import rpg.Sistema;
+import rpg.controller.Sistema;
 
 public class Heroi extends Sistema {
 
