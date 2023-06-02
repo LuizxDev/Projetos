@@ -12,6 +12,7 @@ public class Heroi extends Sistema {
 
     public Heroi() {
 
+            //classe view
         this.setName(JOptionPane.showInputDialog("Digite o nome do seu Heroi "));
 
         JOptionPane.showInternalMessageDialog(null, "Ola " +
