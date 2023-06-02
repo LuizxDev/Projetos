@@ -1,4 +1,6 @@
 import javax.swing.JOptionPane;
+
+import controller.Sistema;
 public class App{   
     public static void main(String[] args) {
 
@@ -13,7 +15,7 @@ public class App{
         switch (opcao){
             case 1:
                 matriz.trezXtrez();
-                matriz.mostrarMatrizTrezTrez();
+                matriz.gerarMatrizTrezTrez();
             break;
 
             case 2:

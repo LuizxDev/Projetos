@@ -1,3 +1,4 @@
+package controller;
 import javax.swing.JOptionPane;
 import java.util.Random;
 public class Sistema {
@@ -17,7 +18,7 @@ public class Sistema {
     }
     
 
-    public void mostrarMatrizTrezTrez(){
+    public void gerarMatrizTrezTrez(){
         JOptionPane.showMessageDialog(null, 
         "\n|" +matriz[0][0] +"  "+ matriz[0][1] +"  "+ matriz[0][2] + "|" +
         "\n|" +matriz[1][0] +"  "+ matriz[1][1] +"  "+ matriz[1][2] + "|" +
