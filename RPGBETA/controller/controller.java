@@ -16,6 +16,7 @@ public class controller {
 
             switch (escolha){
                 case 1:
+                    
                     heroi.ataque(inimigo);
                     //ataque
                 break;
