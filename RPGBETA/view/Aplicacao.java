@@ -11,8 +11,9 @@ public class Aplicacao {
         controller ctrl = new controller();
         EfeitoCtrl efeito = new EfeitoCtrl();
 
-        int escolha = Integer.parseInt(JOptionPane.showInputDialog("\n|Escolha uma ação| \n|1| Atacar \n|2| Usar Porção" +
-                        "\n|3| Sair do Jogo"));
+        int escolha = Integer
+                .parseInt(JOptionPane.showInputDialog("\n|Escolha uma ação| \n|1| Atacar \n|2| Usar Porção" +
+                "\n|3| Sair do Jogo"));
 
         switch (escolha) {
             case 1:
