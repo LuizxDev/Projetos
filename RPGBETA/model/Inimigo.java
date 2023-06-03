@@ -6,4 +6,9 @@ public class Inimigo extends Personagens {
         return this.getVida() > 0;
     }
 
+    public int ataque(Heroi heroi){
+        heroi.setVida(getVida() - this.getDanoAtaque());
+        return heroi.getVida();
+    }
+
 }
