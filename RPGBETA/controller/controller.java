@@ -18,6 +18,7 @@ public class controller {
                 case 1:
                     
                     heroi.ataque(inimigo);
+                    inimigo.status(inimigo);
                     //ataque
                 break;
                 case 2:
@@ -29,6 +30,6 @@ public class controller {
                 break;
             }
 
-        } while (heroi.estaVivo() && inimigo.estaVivo());
+        } while (heroi.estaVivo() && inimigo.estaVivo() && escolha != 3);
     }
 }
