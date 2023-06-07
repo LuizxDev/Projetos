@@ -2,18 +2,26 @@ package RPGBETA.controller;
 
 import RPGBETA.model.Heroi;
 import RPGBETA.model.Inimigo;
+import RPGBETA.view.Aplicacao;
 
 public class controller {
 
     Heroi heroi = new Heroi();
     Inimigo inimigo= new Inimigo();
+
+    private int opcao;
+
+    
     
     public void IniciarJogo(int escolha){
 
+    Aplicacao app = new Aplicacao();
 
 
         do {
 
+            app.opcao();
+            
             switch (escolha){
                 case 1:
                     
@@ -32,4 +40,14 @@ public class controller {
 
         } while (heroi.estaVivo() && inimigo.estaVivo() && escolha != 3);
     }
+
+
+    public int getOpcao() {
+        return opcao;
+    }
+
+    public void setOpcao(int opcao) {
+        this.opcao = opcao;
+    }
+
 }
